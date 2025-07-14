@@ -44,8 +44,6 @@ public class GameController {
     private Random rand = new Random();
     private DatabaseManager dbManager = new DatabaseManager();
 
-
-
     @FXML
     public void initialize() {
         gc = gameCanvas.getGraphicsContext2D();
@@ -75,7 +73,7 @@ public class GameController {
         gc.clearRect(0, 0, gameCanvas.getWidth(), gameCanvas.getHeight());
         gc.setFill(Color.BLACK);
         gc.setFont(Font.font(20));
-        gc.fillText("Press SPACE or click START to play", 10, 250);
+        gc.fillText("Press SPACE or click START to play", 130, 250);
     }
 
     private void startGame() {

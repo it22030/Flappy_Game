@@ -6,36 +6,36 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controllers.GameController">
-    <Canvas fx:id="gameCanvas" width="400" height="600" />
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controllers.GameController">
+    <Canvas fx:id="gameCanvas" height="606.0" layoutX="-3.0" layoutY="-18.0" nodeOrientation="INHERIT" width="663.0" />
 
-    <Button fx:id="startButton" layoutX="150" layoutY="300" text="START GAME" style="-fx-font-size: 16px;" />
+    <Button fx:id="startButton" layoutX="243.0" layoutY="273.0" prefHeight="53.0" prefWidth="115.0" style="-fx-font-size: 16px;" text="START GAME" textFill="#1d5940" />
 
     <Label fx:id="scoreLabel" layoutX="20" layoutY="20" style="-fx-text-fill: black; -fx-font-weight: bold;">
         <font>
-            <Font size="18.0" />
+            <Font size="20.0" />
         </font>
     </Label>
 
-    <Label fx:id="gameOverLabel" layoutX="100" layoutY="200" text="GAME OVER" style="-fx-text-fill: red; -fx-font-weight: bold;" visible="false">
+    <Label fx:id="gameOverLabel" layoutX="200" layoutY="200" style="-fx-text-fill: red; -fx-font-weight: bold;" text="GAME OVER" visible="false">
         <font>
             <Font size="36.0" />
         </font>
     </Label>
 
-    <Label fx:id="finalScoreLabel" layoutX="100" layoutY="250" style="-fx-text-fill: black; -fx-font-weight: bold;" visible="false">
+    <Label fx:id="finalScoreLabel" layoutX="200" layoutY="250" style="-fx-text-fill: black; -fx-font-weight: bold;" visible="false">
         <font>
             <Font size="24.0" />
         </font>
     </Label>
 
-    <Label fx:id="highScoreLabel" layoutX="100" layoutY="300" style="-fx-text-fill: black; -fx-font-weight: bold;" visible="false">
+    <Label fx:id="highScoreLabel" layoutX="200" layoutY="300" style="-fx-text-fill: black; -fx-font-weight: bold;" visible="false">
         <font>
             <Font size="24.0" />
         </font>
     </Label>
 
-    <Button fx:id="playAgainButton" layoutX="120" layoutY="350" text="Play Again" style="-fx-font-size: 16px;" visible="false" />
-    <Button fx:id="exitButton" layoutX="220" layoutY="350" text="Exit" style="-fx-font-size: 16px;" visible="false" />
-    <Button fx:id="saveScoreButton" layoutX="170" layoutY="400" text="Save Score" style="-fx-font-size: 16px;" visible="false" />
+    <Button fx:id="playAgainButton" layoutX="190" layoutY="350" style="-fx-font-size: 16px;" text="Play Again" visible="false" />
+    <Button fx:id="exitButton" layoutX="350" layoutY="350" style="-fx-font-size: 16px;" text="Exit" visible="false" />
+    <Button fx:id="saveScoreButton" layoutX="270" layoutY="400" style="-fx-text-fill: green; -fx-font-size: 16px;" text="Save Score" visible="false" />
 </AnchorPane>
